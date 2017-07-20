@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "extragear:items/emerald_axe"
+            }
+}﻿

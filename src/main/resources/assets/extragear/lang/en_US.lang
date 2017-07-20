@@ -1,0 +1,45 @@
+item.flame_sword.name=Flame Sword
+item.flame_pickaxe.name=Flame Pickaxe
+item.flame_axe.name=Flame Axe
+item.flame_shovel.name=Flame Shovel
+
+item.aqua_sword.name=Aqua Sword
+item.aqua_pickaxe.name=Aqua Pickaxe
+item.aqua_axe.name=Aqua Axe
+item.aqua_shovel.name=Aqua Shovel
+
+item.earth_sword.name=Earth Sword
+item.earth_pickaxe.name=Earth Pickaxe
+item.earth_axe.name=Earth Axe
+item.earth_shovel.name=Earth Shovel
+
+item.wind_sword.name=Wind Sword
+item.wind_pickaxe.name=Wind Pickaxe
+item.wind_axe.name=Wind Axe
+item.wind_shovel.name=Wind Shovel
+
+item.emerald_sword.name=Emerald Sword
+item.emerald_pickaxe.name=Emerald Pickaxe
+item.emerald_axe.name=Emerald Axe
+item.emerald_shovel.name=Emerald Shovel
+
+item.obsidian_sword.name=Obsidian Sword
+item.obsidian_pickaxe.name=Obsidian Pickaxe
+item.obsidian_axe.name=Obsidian Axe
+item.obsidian_shovel.name=Obsidian Shovel
+
+tile.primal_ore.name=Primal Ore
+item.primal_ingot.name=Primal Ingot
+item.flame_ingot.name=Flame Ingot
+item.aqua_ingot.name=Aqua Ingot
+item.earth_ingot.name=Earth Ingot
+item.wind_ingot.name=Wind Ingot
+tile.primal_block.name=Primal Block
+tile.flame_block.name=Flame Block
+tile.aqua_block.name=Aqua Block
+tile.earth_block.name=Earth Block
+tile.wind_block.name=Wind Block
+
+item.prismarine_stick.name= Prismarine Stick
+
+itemGroup.tabExtraGear=Extra Gear
