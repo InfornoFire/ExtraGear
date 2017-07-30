@@ -20,10 +20,16 @@ public class itemWindAxe extends ItemAxe {
 		
 	}
 	
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand) {
-		player.addPotionEffect((new PotionEffect(Potion.getPotionById(1), 60, 1)));
-		return new ActionResult (EnumActionResult.SUCCESS, itemStack);
-		
+	public boolean hitEntity(ItemStack itemStack, EntityLivingBase entityHit, EntityLivingBase entityUser) {
+		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 60, 1));
+		return true;
 	}
+	
+	//Test
+	//public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand) {
+		//player.addPotionEffect((new PotionEffect(Potion.getPotionById(1), 60, 1)));
+		//return new ActionResult (EnumActionResult.SUCCESS, itemStack);
+		
+	//}
 	
 }

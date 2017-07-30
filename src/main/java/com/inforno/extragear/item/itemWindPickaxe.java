@@ -19,11 +19,17 @@ public class itemWindPickaxe extends ItemPickaxe {
 		super(mat);
 	}
 	
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand) {
-		player.addPotionEffect((new PotionEffect(Potion.getPotionById(1), 100, 0)));
-		return new ActionResult (EnumActionResult.SUCCESS, itemStack);
-		
+	public boolean hitEntity(ItemStack itemStack, EntityLivingBase entityHit, EntityLivingBase entityUser) {
+		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 100, 0));
+		return true;
 	}
+	
+	//Test
+	//public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand) {
+		//player.addPotionEffect((new PotionEffect(Potion.getPotionById(1), 100, 0)));
+		//return new ActionResult (EnumActionResult.SUCCESS, itemStack);
+		
+	//}
 	
 
 }

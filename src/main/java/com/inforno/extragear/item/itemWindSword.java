@@ -19,10 +19,17 @@ public class itemWindSword extends ItemSword {
 	public itemWindSword (ToolMaterial mat) {
 		super(mat);
 	}
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand) {
-		player.addPotionEffect((new PotionEffect(Potion.getPotionById(1), 20, 2)));
-		return new ActionResult (EnumActionResult.SUCCESS, itemStack);
-		
+	
+	public boolean hitEntity(ItemStack itemStack, EntityLivingBase entityHit, EntityLivingBase entityUser) {
+		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 20, 2));
+		return true;
 	}
+	
+	//Test
+	//public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand) {
+		//player.addPotionEffect((new PotionEffect(Potion.getPotionById(1), 20, 2)));
+		//return new ActionResult (EnumActionResult.SUCCESS, itemStack);
+		
+	//}
 	
 }

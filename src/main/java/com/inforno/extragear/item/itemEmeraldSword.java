@@ -9,6 +9,8 @@ public class itemEmeraldSword extends ItemSword {
 	public itemEmeraldSword (ToolMaterial mat) {
 		super(mat);
 	}
+	
+	
 
 }
 
