@@ -16,20 +16,19 @@ import net.minecraft.world.World;
 public class itemWindAxe extends ItemAxe {
 	
 	public itemWindAxe (ToolMaterial material) {
-		super(material, 16.0F, -3.0F);
+		super(material, 18.0F, -3.0F);
 		
 	}
 	
 	public boolean hitEntity(ItemStack itemStack, EntityLivingBase entityHit, EntityLivingBase entityUser) {
+        itemStack.damageItem(2, entityUser);
 		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 60, 1));
 		return true;
 	}
 	
-	//Test
-	//public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand) {
-		//player.addPotionEffect((new PotionEffect(Potion.getPotionById(1), 60, 1)));
-		//return new ActionResult (EnumActionResult.SUCCESS, itemStack);
-		
-	//}
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        return repair.getItem() == _Items.itemWindIngot ? true : super.getIsRepairable(toRepair, repair);
+    }
 	
 }

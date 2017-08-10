@@ -28,6 +28,7 @@ public class _Items {
 	public static Item itemFlameScythe;
 	public static Item itemAquaSword, itemAquaPickaxe, itemAquaAxe, itemAquaShovel;
 	public static Item itemAquaBow;
+	public static Item itemAquaDagger;
 	public static Item itemEarthSword, itemEarthPickaxe, itemEarthAxe, itemEarthShovel;
 	public static Item foodEarthApple;
 	public static Item itemWindSword, itemWindPickaxe, itemWindAxe, itemWindShovel;
@@ -55,7 +56,7 @@ public class _Items {
 		itemAquaPickaxe= registerItem(new itemAquaPickaxe(_ToolMats.materialAqua), "aqua_pickaxe");
 		itemAquaAxe= registerItem(new itemAquaAxe(_ToolMats.materialAqua), "aqua_axe");
 		itemAquaShovel= registerItem(new itemAquaShovel(_ToolMats.materialAqua), "aqua_shovel");
-		//Being Reworked
+		itemAquaDagger= registerItem(new itemAquaDagger(_ToolMats.materialAqua), "aqua_dagger");
 		//itemAquaBow= registerItem(new itemAquaBow(), "aqua_bow");
 		
 		itemEarthSword= registerItem(new itemEarthSword(_ToolMats.materialEarth), "earth_sword");
@@ -68,6 +69,7 @@ public class _Items {
 		itemWindPickaxe= registerItem(new itemWindPickaxe(_ToolMats.materialWind), "wind_pickaxe");
 		itemWindAxe= registerItem(new itemWindAxe(_ToolMats.materialWind), "wind_axe");
 		itemWindShovel= registerItem(new itemWindShovel(_ToolMats.materialWind), "wind_shovel");
+		itemWindPaxel= registerItem(new itemWindPaxel(_ToolMats.materialWindPaxel), "wind_paxel");
 		
 		itemEmeraldSword= registerItem(new itemEmeraldSword(_ToolMats.materialEmerald), "emerald_sword");
 		itemEmeraldPickaxe= registerItem(new itemEmeraldPickaxe(_ToolMats.materialEmerald), "emerald_pickaxe");

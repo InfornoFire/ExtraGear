@@ -34,5 +34,10 @@ public class FlameArmor extends ItemArmor {
 		}
 
 	}
+	
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        return repair.getItem() == _Items.itemFlameIngot ? true : super.getIsRepairable(toRepair, repair);
+    }
 
 }

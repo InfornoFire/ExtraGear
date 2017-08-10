@@ -20,16 +20,15 @@ public class itemWindPickaxe extends ItemPickaxe {
 	}
 	
 	public boolean hitEntity(ItemStack itemStack, EntityLivingBase entityHit, EntityLivingBase entityUser) {
+        itemStack.damageItem(2, entityUser);
 		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(1), 100, 0));
 		return true;
 	}
 	
-	//Test
-	//public ActionResult<ItemStack> onItemRightClick(ItemStack itemStack, World world, EntityPlayer player, EnumHand hand) {
-		//player.addPotionEffect((new PotionEffect(Potion.getPotionById(1), 100, 0)));
-		//return new ActionResult (EnumActionResult.SUCCESS, itemStack);
-		
-	//}
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        return repair.getItem() == _Items.itemWindIngot ? true : super.getIsRepairable(toRepair, repair);
+    }
 	
 
 }

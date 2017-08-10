@@ -9,6 +9,8 @@ import net.minecraft.potion.PotionEffect;
 
 public class itemAquaBow extends ItemBow {
 	
+	//This class will stay but will not be used
+	
 	public itemAquaBow() {
 		//Cause I feel like it
 		this.setMaxDamage(999);
@@ -32,5 +34,10 @@ public class itemAquaBow extends ItemBow {
 		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(18), 60, 0));
 		return true;
 	}
+	
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        return repair.getItem() == _Items.itemAquaIngot ? true : super.getIsRepairable(toRepair, repair);
+    }
 	
 }

@@ -19,7 +19,8 @@ public class foodEarthApple extends ItemFood {
 	
     public boolean hasEffect(ItemStack itemstack) {
 	    	return true;
-	    }
+	}
+    
 	@Override
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer player) {
         if (!world.isRemote) {

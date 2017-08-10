@@ -25,13 +25,7 @@ public class _Recipes {
 		addRecipe(new ItemStack(_Items.itemFlamePickaxe, 1), new Object[ ] { " f ", "fdf", " b ", Character.valueOf('f'), _Items.itemFlameIngot, Character.valueOf('d'), Items.DIAMOND_PICKAXE, Character.valueOf('b'), Items.BLAZE_ROD, });
 		addRecipe(new ItemStack(_Items.itemFlameAxe, 1), new Object[ ] { " f ", "idi", " b ", Character.valueOf('f'), _Blocks.blockFlameBlock, Character.valueOf('i'), _Items.itemFlameIngot, Character.valueOf('d'), Items.DIAMOND_AXE, Character.valueOf('b'), Items.BLAZE_ROD, });
 		addRecipe(new ItemStack(_Items.itemFlameShovel, 1), new Object[ ] { " f ", "fdf", " b ", Character.valueOf('f'), _Items.itemFlameIngot, Character.valueOf('d'), Items.DIAMOND_SHOVEL, Character.valueOf('b'), Items.BLAZE_ROD, });
-		addRecipe(new ItemStack(_Items.itemFlameScythe, 1), new Object[ ] { 
-				"ff ", 
-				" s ", 
-				" n ", 
-				Character.valueOf('s'), _Items.itemFlameSword, 
-				Character.valueOf('f'), _Items.itemFlameIngot,
-				Character.valueOf('n'), Items.NETHER_STAR, });
+		addRecipe(new ItemStack(_Items.itemFlameScythe, 1), new Object[ ] { "ff ", " s ", " n ", Character.valueOf('s'), _Items.itemFlameSword, Character.valueOf('f'), _Items.itemFlameIngot, Character.valueOf('n'), Items.NETHER_STAR, });
 		
 		addRecipe(new ItemStack(_Items.itemPrismarineStick, 1), new Object[ ] { "   ", " p ", " p ", Character.valueOf('p'), Items.PRISMARINE_SHARD, });
 		
@@ -39,6 +33,7 @@ public class _Recipes {
 		addRecipe(new ItemStack(_Items.itemAquaPickaxe, 1), new Object[ ] { " a ", "ada", " p ", Character.valueOf('a'), _Items.itemAquaIngot, Character.valueOf('d'), Items.DIAMOND_PICKAXE, Character.valueOf('p'), _Items.itemPrismarineStick, });
 		addRecipe(new ItemStack(_Items.itemAquaAxe, 1), new Object[ ] { " a ", "idi", " p ", Character.valueOf('a'), _Blocks.blockAquaBlock, Character.valueOf('i'), _Items.itemAquaIngot, Character.valueOf('d'), Items.DIAMOND_AXE, Character.valueOf('p'), _Items.itemPrismarineStick, });
 		addRecipe(new ItemStack(_Items.itemAquaShovel, 1), new Object[ ] { " a ", "ada", " p ", Character.valueOf('a'), _Items.itemAquaIngot, Character.valueOf('d'), Items.DIAMOND_SHOVEL, Character.valueOf('p'), _Items.itemPrismarineStick, });
+		addRecipe(new ItemStack(_Items.itemAquaDagger, 1), new Object[ ] { " b ", " n ", "   ", Character.valueOf('b'), _Blocks.blockAquaBlock, Character.valueOf('n'), Items.NETHER_STAR, });
 		//addRecipe(new ItemStack(_Items.itemAquaBow, 1), new Object[ ] { " a ", "anb", " a ", Character.valueOf('b'), Items.BOW, Character.valueOf('a'), _Items.itemAquaIngot, Character.valueOf('n'), Items.NETHER_STAR, });
 		
 		addRecipe(new ItemStack(_Items.itemEarthSword, 1), new Object[ ] { " e ", "idi", " s ", Character.valueOf('e'), _Blocks.blockEarthBlock, Character.valueOf('i'), _Items.itemEarthIngot, Character.valueOf('d'), Items.DIAMOND_SWORD, Character.valueOf('s'), Items.STICK, });
@@ -51,7 +46,7 @@ public class _Recipes {
 		addRecipe(new ItemStack(_Items.itemWindPickaxe, 1), new Object[ ] { " w ", "wdw", " s ", Character.valueOf('w'), _Items.itemWindIngot, Character.valueOf('d'), Items.DIAMOND_PICKAXE, Character.valueOf('s'), Items.STICK, });
 		addRecipe(new ItemStack(_Items.itemWindAxe, 1), new Object[ ] { " w ", "idi", " s ", Character.valueOf('w'), _Blocks.blockWindBlock, Character.valueOf('i'), _Items.itemWindIngot, Character.valueOf('d'), Items.DIAMOND_AXE, Character.valueOf('s'), Items.STICK, });
 		addRecipe(new ItemStack(_Items.itemWindShovel, 1), new Object[ ] { " w ", "wdw", " s ", Character.valueOf('w'), _Items.itemWindIngot, Character.valueOf('d'), Items.DIAMOND_SHOVEL, Character.valueOf('s'), Items.STICK, });
-		//addRecipe(new ItemStack(_Items.itemWindPaxel, 1), new Object[ ] { "pas", " n ", " t ", Character.valueOf('p'), _Items.itemWindPickaxe, Character.valueOf('a'), _Items.itemWindAxe, Character.valueOf('s'), _Items.itemWindShovel, Character.valueOf('t'), Items.STICK, Character.valueOf('n'), Items.NETHER_STAR, });
+		addRecipe(new ItemStack(_Items.itemWindPaxel, 1), new Object[ ] { "pas", " t ", " n ", Character.valueOf('p'), _Items.itemWindPickaxe, Character.valueOf('a'), _Items.itemWindAxe, Character.valueOf('s'), _Items.itemWindShovel, Character.valueOf('t'), _Items.itemWindSword, Character.valueOf('n'), Items.NETHER_STAR, });
 		
 		addRecipe(new ItemStack(_Items.itemEmeraldSword, 1), new Object[ ] { " e ", " e ", " s ", Character.valueOf('e'), Items.EMERALD, Character.valueOf('s'), Items.STICK, });
 		addRecipe(new ItemStack(_Items.itemEmeraldPickaxe, 1), new Object[ ] { "eee", " s ", " s ", Character.valueOf('e'), Items.EMERALD, Character.valueOf('s'), Items.STICK, });
@@ -88,10 +83,10 @@ public class _Recipes {
 		addRecipe(new ItemStack(_Armor.armorEmeraldLeggings, 1), new Object[ ] { "eee", "e e", "e e", Character.valueOf('e'), Items.EMERALD, });
 		addRecipe(new ItemStack(_Armor.armorEmeraldBoots, 1), new Object[ ] { "   ", "e e", "e e", Character.valueOf('e'), Items.EMERALD, });
 		
-		addRecipe(new ItemStack(_Armor.armorEmeraldHelmet, 1), new Object[ ] { "   ", "ooo", "o o", Character.valueOf('o'), Blocks.OBSIDIAN, });
-		addRecipe(new ItemStack(_Armor.armorEmeraldChestplate, 1), new Object[ ] { "o o", "ooo", "ooo", Character.valueOf('o'), Blocks.OBSIDIAN, });
-		addRecipe(new ItemStack(_Armor.armorEmeraldLeggings, 1), new Object[ ] { "ooo", "o o", "o o", Character.valueOf('o'), Blocks.OBSIDIAN, });
-		addRecipe(new ItemStack(_Armor.armorEmeraldBoots, 1), new Object[ ] { "   ", "o o", "o o", Character.valueOf('o'), Blocks.OBSIDIAN, });
+		addRecipe(new ItemStack(_Armor.armorObsidianHelmet, 1), new Object[ ] { "   ", "ooo", "o o", Character.valueOf('o'), Blocks.OBSIDIAN, });
+		addRecipe(new ItemStack(_Armor.armorObsidianChestplate, 1), new Object[ ] { "o o", "ooo", "ooo", Character.valueOf('o'), Blocks.OBSIDIAN, });
+		addRecipe(new ItemStack(_Armor.armorObsidianLeggings, 1), new Object[ ] { "ooo", "o o", "o o", Character.valueOf('o'), Blocks.OBSIDIAN, });
+		addRecipe(new ItemStack(_Armor.armorObsidianBoots, 1), new Object[ ] { "   ", "o o", "o o", Character.valueOf('o'), Blocks.OBSIDIAN, });
 		
 		addRecipeShapeless(new ItemStack(_Items.itemPrimalIngot, 9), new ItemStack(_Blocks.blockPrimalBlock));
 		addRecipeShapeless(new ItemStack(_Items.itemFlameIngot, 9), new ItemStack(_Blocks.blockFlameBlock));

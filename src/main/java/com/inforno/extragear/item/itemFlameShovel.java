@@ -12,8 +12,14 @@ public class itemFlameShovel extends ItemSpade {
 	}
 	
 	public boolean hitEntity(ItemStack itemStack, EntityLivingBase entityHit, EntityLivingBase entityUser) {
+        itemStack.damageItem(2, entityUser);
 		entityHit.setFire(6);
 		return true;
 	}
+	
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        return repair.getItem() == _Items.itemFlameIngot ? true : super.getIsRepairable(toRepair, repair);
+    }
 
 }

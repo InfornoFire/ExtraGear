@@ -18,8 +18,14 @@ public class itemEarthPickaxe extends ItemPickaxe {
 	}
 	
 	public boolean hitEntity(ItemStack itemStack, EntityLivingBase entityHit, EntityLivingBase entityUser) {
+        itemStack.damageItem(2, entityUser);
 		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(11), 40, 1));
 		return true;
 	}
+	
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        return repair.getItem() == _Items.itemEarthIngot ? true : super.getIsRepairable(toRepair, repair);
+    }
 
 }

@@ -14,10 +14,16 @@ public class itemAquaShovel extends ItemSpade {
 	}
 	
 	public boolean hitEntity(ItemStack itemStack, EntityLivingBase entityHit, EntityLivingBase entityUser) {
+        itemStack.damageItem(2, entityUser);
 		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(2), 60, 0));
 		entityHit.addPotionEffect(new PotionEffect(Potion.getPotionById(4), 60, 0));
 		return true;
 	}
+	
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+    {
+        return repair.getItem() == _Items.itemAquaIngot ? true : super.getIsRepairable(toRepair, repair);
+    }
 	
 
 }
